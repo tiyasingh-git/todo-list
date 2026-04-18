@@ -5,6 +5,13 @@ Elm Architecture pattern: model, update, view with localStorage
 
 ---
 
+## Live Demo
+
+Try it here:  
+https://comfy-flan-6359bf.netlify.app
+
+---
+
 ## Features
 
 - Add, complete, delete tasks & filter by all-active-done
