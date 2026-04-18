@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Pixel Todo List</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="src/style.css"/>
+    </head>
+    
+    <body>
+        <div class="wrap">
+            <div class="card">
+                <div class="input-row">
+                    <input
+                    id="new-todo"
+                    class="todo-input"
+                    type="text"
+                    placeholder="add a task"
+                    maxlength="80"
+                    autocomplete="off"
+                    aria-label="New task"/>
+                    <button id="add-btn" class="add-btn" aria-label="Add task"> + </button>
+                </div>
+                
+                <nav class="filter-bar" aria-label="Filter tasks">
+                    <button class="filter-btn active" data-filter="all"> all </button>
+                    <button class="filter-btn" data-filter="active"> active </button>
+                    <button class="filter-btn" data-filter="completed"> done </button>
+                </nav>
+                
+                <ul id="todo-list" class="todo-list" aria-live="polite" aria-label="Tasks"></ul>
+                <div class="card-footer">
+                    <span id="count-msg" class="count-txt"> 0 left </span>
+                    <div class="theme-circles" aria-label="Color theme">
+                        <button class="circle c-pink  active" data-theme="pink" aria-label="Pink"></button>
+                        <button class="circle c-yellow" data-theme="yellow" aria-label="Yellow"></button>
+                        <button class="circle c-blue" data-theme="blue" aria-label="Blue"></button>
+                        <button class="circle c-green" data-theme="green" aria-label="Green"></button>
+                    </div>
+                    <button id="clear-btn" class="clear-btn"> clear </button>
+                </div>
+            </div>
+        </div>
+        <script src="src/app.js"></script>
+    </body>
+</html>

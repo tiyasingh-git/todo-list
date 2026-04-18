@@ -1,0 +1,10 @@
+{
+  "name": "pixel-todo",
+  "version": "1.0.0",
+  "description": "Pixel-art pastel todo app — vanilla JS, deployed on Netlify.",
+  "private": true,
+  "scripts": {
+    "test": "node tests/app.test.js",
+    "dev": "npx serve . --listen 3000"
+  }
+}
